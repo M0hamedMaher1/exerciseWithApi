@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-row">
+                    <div class="left-ul">
+                        <div class="first">
+                            <i class="fa-solid fa-bars"></i>
+                            <h3>Browse All Categories</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">home <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li><a href="#">shop <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li><a href="#">product <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li><a href="#">page <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li><a href="#">blog <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li><a href="#">contact us</a></li>
+                            <li><a href="#"><span>buy uminex!</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="right-disc">
+                        <i class="fa-solid fa-percent"></i>
+                        <a href="#">
+                            Sale $20 Off Your First Order.
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="up">
+            <div class="container">
+                <div class="nav-row">
+                    <h3>You are a student and students get 20% discount.</h3>
+                    <div class="right-Ul">
+                        <ul>
+                            <li><a href="#">Store Locator</a></li>
+                            <li><a href="#">Order Tracking</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                        <div class="right">
+                            <h4>English <i class="fa-solid fa-angle-down"></i></h4>
+                            <h4>United States(USD $) <i class="fa-solid fa-angle-down"></i></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mid">
+            <div class="container">
+                <div class="mid-row">
+                    <div class="bars">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="logo">
+                        <h1>
+                            <a href="./index.html">
+                                <img src="./imgs/Logo_fb7c7c58-1b8f-455e-8b97-56d607743b37_145x@2x.avif" alt="">
+                            </a>
+                        </h1>
+                    </div>
+                    <div class="mid-input">
+                        <input type="text" onkeyup="searchProduct(this.value)" placeholder="Search for products..."
+                            name="productsSeached">
+                        <div class="selection">
+                            <select>
+                                <option selected disabled>All Categories</option>
+                            </select>
+                        </div>
+                        <button class="search">search</button>
+                    </div>
+                    <div class="right-status">
+                        <div class="acc">
+                            <i class="fa-regular fa-user"></i>
+                            <div class="right-Things">
+                                <h4>LogIn</h4>
+                                <h3>Account</h3>
+                            </div>
+                        </div>
+                        <i class="fa-regular fa-heart clicks click"><span>0</span></i>
+                        <div class="cart">
+                            <a href="./cart.html">
+                                <i class="fa-solid fa-cart-shopping clicks"><span>0</span></i>
+                            </a>
+                            <div class="right-Things">
+                                <h4>Your Cart</h4>
+                                <h3>$<span>0.00</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <aside class="aside1">
+            <div class="aside-container">
+                <div class="aside-content">
+                    <div class="close">
+                        <h3><i class="fa-solid fa-xmark"></i> Close</h3>
+                    </div>
+                    <label for="inp">
+                        what are you looking for ?
+                    </label>
+                    <div class="aside-input">
+                        <input type="text" onkeyup="searchProduct(this.value)" placeholder="Search..." id="inp">
+                        <div class="search2">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><a href="#"><i class="fa-regular fa-user"></i> Login / Register</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#" class="click"><i class="fa-regular fa-heart"></i> WishList(<span>0</span>)</a>
+                        </li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <div class="last">
+            <div class="container">
+                <div class="nav-row">
+                    <div class="left-ul">
+                        <div class="first">
+                            <i class="fa-solid fa-bars"></i>
+                            <h3>Browse All Categories</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">home <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li><a href="#">shop <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li><a href="#">product <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li><a href="#">page <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li><a href="#">blog <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li><a href="#">contact us</a></li>
+                            <li><a href="#"><span>buy uminex!</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="right-disc">
+                        <i class="fa-solid fa-percent"></i>
+                        <a href="#">
+                            Sale $20 Off Your First Order.
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-row">
+                    <div class="left-main-ul">
+                        <ul>
+                            <li><a href="#">Computer & Desktop</a></li>
+                            <li><a href="#">Laptop & Ipad</a></li>
+                            <li><a href="#">Cameras & Photos</a></li>
+                            <li><a href="#">Smart Phones & Tablets</a></li>
+                            <li><a href="#">Home & Kitchen</a></li>
+                            <li><a href="#">TV & Audios</a></li>
+                            <li><a href="#">Health & Beauty</a></li>
+                            <li><a href="#">Watches & Eyewear</a></li>
+                            <li><a href="#">Top Deals</a></li>
+                            <li><a href="#">Top Selling Products</a></li>
+                            <li><a href="#">Top Featured Products</a></li>
+                        </ul>
+                    </div>
+                    <div class="right-content">
+                        <div class="left-images">
+                            <div class="big-card">
+                                <img src="./imgs/banner_3_1.webp" alt="">
+                                <div class="pos">
+                                    <span>GALAXY TAP 2022</span>
+                                    <h2>Top Trending<br>Galaxy Tap S6 Ultra</h2>
+                                    <button>shop now</button>
+                                </div>
+                            </div>
+                            <div class="small-cards none">
+                                <img src="./imgs/phone1-small.avif" alt="">
+                                <h4>Tablet</h4>
+                            </div>
+                            <div class="small-cards">
+                                <img src="./imgs/phone2.small.avif" alt="">
+                                <h4>Phone</h4>
+                            </div>
+                            <div class="small-cards">
+                                <img src="./imgs/camera-small.avif" alt="">
+                                <h4>Camera</h4>
+                            </div>
+                            <div class="small-cards">
+                                <img src="./imgs/controller1-small.avif" alt="">
+                                <h4>Gamepad</h4>
+                            </div>
+                            <div class="small-cards none">
+                                <img src="./imgs/tablet-small.avif" alt="">
+                                <h4>Tablet</h4>
+                            </div>
+                        </div>
+                        <div class="right-images">
+                            <div class="right-card">
+                                <img src="./imgs/headphones.webp" alt="">
+                                <div class="pos2">
+                                    <h3>over-ear<br>headphones</h3>
+                                    <p>20 days return products</p>
+                                </div>
+                            </div>
+                            <div class="right-card">
+                                <img src="./imgs/airbuds.webp" alt="">
+                                <div class="pos2">
+                                    <h3>AirPods<br>Save 20% Off</h3>
+                                    <p>20 days return products</p>
+                                </div>
+                            </div>
+                            <div class="right-card">
+                                <img src="./imgs/gamepad.webp" alt="">
+                                <div class="pos2">
+                                    <h3>Gamepad<br>Optional Skins</h3>
+                                    <p>20 days return products</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products">
+            <div class="container">
+                <ul class="features">
+                    <li><a href="#" class="one">FEATURED</a></li>
+                    <li><a href="#" class="two">TOP TRENDING</a></li>
+                    <li><a href="#" class="two">ON-SALE</a></li>
+                </ul>
+                <div class="products-row">
+
+                </div>
+            </div>
+            <div class="overlay">
+                <div class="container">
+                    <i class="fa-solid fa-xmark close2"></i>
+                    <div class="over-row">
+                        <div class="left"></div>
+                        <div class="right-info">
+                            <h3></h3>
+                            <p>
+                                
+                            </p>
+                            <button>Rate It!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- JS -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
